@@ -1,10 +1,5 @@
-# JavaScript 기초 문법 공부 레포지토리
-이 레포지토리는 JavaScript 기초 문법에 대한 학습 내용을 담고 있습니다.
-
-## 1주차
-
-### 1. 변수와 상수: `var`, `let`, `const`
-JavaScript에서 변수와 상수를 선언하는데 사용되는 키워드로는 `var`, `let`, `const`가 있습니다. 각각의 선언 방법과 그들 간의 차이점을 학습합니다.
+<details>
+  <summary><strong>1. 변수와 상수: `var`, `let`, `const`</strong></summary>
 
 #### 1-1. `var`
 - **선언 키워드:** `var`
@@ -38,7 +33,11 @@ JavaScript에서 변수와 상수를 선언하는데 사용되는 키워드로�
     const PI = 3.14;
     // PI = 3.14159; // Error: Assignment to a constant variable
 
-### 2. 데이터 타입: 숫자
+</details>
+
+<details>
+  <summary><strong>2. 데이터 타입: 숫자</strong></summary>
+
 - 숫자 데이터 타입은 정수와 소수를 모두 포함하며, 다양한 수학적 연산이 가능합니다.
     ```javascript
     // 숫자 데이터 타입 예제
@@ -46,8 +45,10 @@ JavaScript에서 변수와 상수를 선언하는데 사용되는 키워드로�
     let floatingPointNumber = 3.14; // 소수
     let result = integerNumber + floatingPointNumber; // 숫자 간 덧셈 연산
 
-### 3. 데이터 타입: 문자
-- 문자열은 JavaScript에서 텍스트 데이터를 나타내는 데 사용되는 데이터 타입입니다. 아래에서는 문자열에 대한 다양한 작업과 관련된 내용을 다룹니다.
+</details>
+
+<details>
+  <summary><strong>3. 데이터 타입: 문자</strong></summary>
 
 #### 3-1. 문자열 생성
 - JavaScript에서는 따옴표(단일 또는 이중)를 사용하여 문자열을 생성할 수 있습니다.
@@ -95,7 +96,10 @@ JavaScript에서 변수와 상수를 선언하는데 사용되는 키워드로�
     let upperCaseStr = str.toUpperCase(); // 결과: "JAVASCRIPT"
     let lowerCaseStr = str.toLowerCase(); // 결과: "javascript"
 
-### 4. 데이터 타입: 불리언, `undefined`, `null`, object, array
+</details>
+
+<details>
+  <summary><strong>4. 데이터 타입: 불리언, `undefined`, `null`, object, array</strong></summary>
 
 #### 4-1. 불리언 (Boolean)
 - 불리언 데이터 타입은 `true`와 `false` 두 가지 값 중 하나를 가집니다. 주로 조건문과 논리 연산에서 사용됩니다.
@@ -128,8 +132,10 @@ JavaScript에서 변수와 상수를 선언하는데 사용되는 키워드로�
     ```javascript
     let fruits = ["apple", "banana", "orange"];
 
-### 5. 형변환: 암시적, 명시적
-- JavaScript에서는 데이터 타입 간 변환이 필요한 경우, 암시적 형변환과 명시적 형변환이 있습니다.
+</details>
+
+<details>
+  <summary><strong>5. 형변환: 암시적, 명시적</strong></summary>
 
 #### 5-1. 암시적 형변환
 - 자바스크립트 엔진이 자동으로 데이터 타입을 변환하는 것을 의미합니다.
@@ -148,7 +154,10 @@ JavaScript에서 변수와 상수를 선언하는데 사용되는 키워드로�
   let strNumber = "123";
   let numFromStr = Number(strNumber); // 문자열 "123"을 숫자로 명시적 형변환
 
-### 6. 연산자
+</details>
+
+<details>
+  <summary><strong>6. 연산자</strong></summary>
 
 #### 6-1. 산술 연산자
 1. **더하기 연산자 (+)**
@@ -187,8 +196,7 @@ JavaScript에서 변수와 상수를 선언하는데 사용되는 키워드로�
    - 변수에 값을 할당하는 기본적인 할당 연산자입니다.
 
      ```javascript
-     let x = 10; // 변수 x에 10을 할당
-     ```
+     let x = 10; // 변수 x에
 
 2. **더하기 등호 연산자 (`+=`)** 
    - 현재 변수의 값에 특정 값을 더하고 그 결과를 변수에 다시 할당합니다.
@@ -213,40 +221,39 @@ JavaScript에서 변수와 상수를 선언하는데 사용되는 키워드로�
      let a = 4;
      a *= 6; // 변수 a에 현재 값에 6을 곱한 결과를 할당 (a = a * 6)
      ```
+     
+#### 6-3. 비교 연산자
 
-### 6-3. 비교 연산자
-
-#### 1. 일치 연산자 (===)
+1. 일치 연산자 (===)
 - 데이터 값과 데이터 타입이 동일한 경우에 true를 반환하는 연산자입니다.
 
-#### 2. 불일치 연산자 (!==)
+2. 불일치 연산자 (!==)
 - 데이터 값이나 데이터 타입 중 하나 이상이 다른 경우에 true를 반환하는 연산자입니다.
 
-#### 3-1. 작다 연산자 (<)
-- 좌항이 우항보다 작은 경우 true를 반환하는 연산자입니다.
-
-#### 3-2. 작거나 같다 연산자 (<=)
-- 좌항이 우항보다 작거나 같은 경우 true를 반환하는 연산자입니다.
-
-#### 3-3. 크다 연산자 (>)
-- 좌항이 우항보다 큰 경우 true를 반환하는 연산자입니다.
-
-#### 3-4. 크거나 같다 연산자 (>=)
-- 좌항이 우항보다 크거나 같은 경우 true를 반환하는 연산자입니다.
+3. 작다 연산자 (<), 작거나 같다 연산자 (<=), 크다 연산자 (>), 크거나 같다 연산자 (>=)
+- 작다 연산자 (<): 좌항이 우항보다 작은 경우 true를 반환하는 연산자입니다.
+- 작거나 같다 연산자 (<=): 좌항이 우항보다 작거나 같은 경우 true를 반환하는 연산자입니다.
+- 크다 연산자 (>): 좌항이 우항보다 큰 경우 true를 반환하는 연산자입니다.
+- 크거나 같다 연산자 (>=): 좌항이 우항보다 크거나 같은 경우 true를 반환하는 연산자입니다.
 
 #### 6-4. 논리 연산자
-1. **논리곱 연산자 (&&) :** 모두 true일 때, true 반환
-2. **논리합 연산자 (||) :** 두 값 중 하나라도 true인 경우 true 반환
-3. **논리부정 연산자 (!)**
+- **논리곱 연산자 (&&) :** 모두 true일 때, true 반환
+- **논리합 연산자 (||) :** 두 값 중 하나라도 true인 경우 true 반환
+- **논리부정 연산자 (!)**
 
 #### 6-5. 삼항 연산자
-조건에 따라 다른 값을 반환하는 삼항 연산자를 학습합니다.
+- 조건에 따라 다른 값을 반환하는 삼항 연산자를 학습합니다.
 
 #### 6-6. 타입 연산자
-변수나 표현식의 데이터 타입을 반환하는 typeof 연산자에 대해 알아봅니다.
+- 변수나 표현식의 데이터 타입을 반환하는 typeof 연산자에 대해 알아봅니다.
 
-### 7. 함수
-1. **함수 선언문**
+</details>
+
+
+<details>
+<summary>7. 함수</summary>
+
+#### 1. **함수 선언문**
    - 두 개의 숫자를 입력받아 덧셈을 수행하는 함수
      ```javascript
      function addNumbers(num1, num2) {
@@ -254,7 +261,7 @@ JavaScript에서 변수와 상수를 선언하는데 사용되는 키워드로�
      }
      ```
 
-2. **함수 표현식**
+#### 2. **함수 표현식**
    - 더하기 기능을 수행하는 함수를 함수 표현식으로 정의
      ```javascript
      const addFunction = function(num1, num2) {
@@ -262,7 +269,12 @@ JavaScript에서 변수와 상수를 선언하는데 사용되는 키워드로�
      };
      ```
 
-### 8. 스코프
+</details>
+
+
+<details>
+<summary>8. 스코프</summary>
+
 스코프는 변수의 유효 범위를 나타냅니다. JavaScript에서는 블록 스코프와 함수 스코프가 있습니다.
 
 - **블록 스코프:** `let`과 `const`로 선언된 변수는 블록({}) 내에서만 유효합니다.
@@ -282,7 +294,12 @@ JavaScript에서 변수와 상수를 선언하는데 사용되는 키워드로�
   
   console.log(functionScopedVar); // 에러: functionScopedVar is not defined
 
-### 9. 전역변수, 지역변수
+</details>
+
+
+<details>
+<summary>9. 전역변수, 지역변수</summary>
+  
 #### 9-1. 전역변수
 - 전역변수는 프로그램 전체에서 접근 가능한 변수를 의미합니다. 전역변수는 어디서든지 호출이 가능하며, 주의가 필요한 부분이 있습니다.
   ```javascript
@@ -304,7 +321,12 @@ JavaScript에서 변수와 상수를 선언하는데 사용되는 키워드로�
   exampleFunction(); // 함수 호출
   // console.log(localVar); // 오류: localVar는 함수 외부에서 접근 불가
 
-### 10. 화살표 함수
+</details>
+
+
+<details>
+<summary>10. 화살표 함수</summary>
+
 - JavaScript에서 화살표 함수는 ES6에서 도입된 새로운 함수 표현식입니다. 간결한 문법과 특정 상황에서의 유용한 특성을 제공합니다.
 
 #### 10-1. 기본 구문
@@ -324,7 +346,12 @@ JavaScript에서 변수와 상수를 선언하는데 사용되는 키워드로�
   ```javascript
   const square = x => x * x;
 
-### 11. 조건문 if 문
+</details>
+
+
+<details>
+<summary>11. 조건문 if 문</summary>
+
 - JavaScript에서 조건문은 주어진 조건에 따라 코드를 실행하거나 건너뛸 수 있는 구조를 제공합니다.
 
 #### 11-1. `if` 문
@@ -355,7 +382,12 @@ JavaScript에서 변수와 상수를 선언하는데 사용되는 키워드로�
     // 모든 조건이 거짓일 때 실행되는 코드
   }
 
-### 12. 조건문의 중첩
+</details>
+
+
+<details>
+<summary>12. 조건문의 중첩</summary>
+  
 - 조건문의 중첩은 여러 개의 조건문을 조합하여 복잡한 조건을 다룰 때 사용됩니다.
   ```javascript
   // 중첩된 if 문
@@ -371,7 +403,11 @@ JavaScript에서 변수와 상수를 선언하는데 사용되는 키워드로�
     console.log("음수이거나 0");
   }
 
-### 13. 조건부 실행
+</details>
+
+
+<details>
+<summary>13. 조건부 실행</summary>
 
 #### 13-1. AND 조건(&&)
 - AND 조건(`&&`)은 두 개의 조건이 모두 참일 때에만 실행됩니다. 만약 첫 번째 조건이 거짓이면 두 번째 조건은 확인되지 않습니다.
@@ -390,7 +426,12 @@ JavaScript에서 변수와 상수를 선언하는데 사용되는 키워드로�
   // y가 falsy일 때 20을 할당
   console.log(z); // 20
 
-### 14. Falsy한 값과 Truthy한 값
+</details>
+
+
+<details>
+<summary>14. Falsy한 값과 Truthy한 값</summary>
+
 - Falsy한 값은 조건문에서 거짓으로 간주되는 값이며, Truthy한 값은 조건문에서 참으로 간주되는 값입니다.
 
 #### 14-1. Falsy한 값
@@ -405,3 +446,4 @@ JavaScript에서 변수와 상수를 선언하는데 사용되는 키워드로�
 #### 14-2. Truthy한 값
 Falsy한 값이 아닌 경우는 모두 Truthy한 값으로 간주됩니다.
 
+</details>
