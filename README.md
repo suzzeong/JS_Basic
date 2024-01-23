@@ -1,3 +1,8 @@
+# JavaScript 기초 문법 공부 레포지토리
+이 레포지토리는 JavaScript 기초 문법에 대한 학습 내용을 담고 있습니다.
+
+## 1주차
+
 <details>
   <summary><strong>1. 변수와 상수: `var`, `let`, `const`</strong></summary>
 
