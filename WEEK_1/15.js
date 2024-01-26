@@ -26,20 +26,20 @@ console.log(person.age); // 30
 console.log(person.gender); // 남자
 
 // 3. 객체 메소드(객체가 가진 여러가지 기능 : Object.~~)
-// 3-1. Object.key() : key를 가져오는 메소드
+// 3-1. Object.keys() : key를 가져오는 메소드
 let keys = Object.keys(person);
 console.log(keys); // [ 'name', 'age', 'gender' ]
 
-// 3-2. values
+// 3-2. Object.values()
 let values = Object.values(person);
 console.log(values); // [ '홍길동', 30, '남자' ]
 
-// 3-3. entries
+// 3-3. Object.entries()
 // key와 value를 묶어서 배열로 만든 배열!! (2차원 배열)
 let entries = Object.entries(person);
 console.log(entries); // [ [ 'name', '홍길동' ], [ 'age', 30 ], [ 'gender', '남자' ] ]
 
-// 3-4. assign
+// 3-4. Object.assign()
 // 객체 복사
 let newPerson = {};
 Object.assign(newPerson, person);
@@ -47,7 +47,7 @@ console.log(newPerson); // { name: '홍길동', age: 30, gender: '남자' }
 Object.assign(newPerson, person, { gender: "여자" });
 console.log(newPerson); // { name: '홍길동', age: 30, gender: '여자' }
 
-// 3-5. 객체 배교
+// 3-5. 객체 비교
 // 크기가 큼!!! -> 메모리에 저장할 때 별도의 공간에 저장
 // person3 별도 공간에 대한 주소
 let person3 = {
