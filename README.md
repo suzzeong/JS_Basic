@@ -256,7 +256,7 @@
 
 
 <details>
-<summary>7. 함수</summary>
+<summary><strong>7. 함수</strong></summary>
 
 #### 1. **함수 선언문**
    - 두 개의 숫자를 입력받아 덧셈을 수행하는 함수
@@ -278,7 +278,7 @@
 
 
 <details>
-<summary>8. 스코프</summary>
+<summary><strong>8. 스코프</strong></summary>
 
 스코프는 변수의 유효 범위를 나타냅니다. JavaScript에서는 블록 스코프와 함수 스코프가 있습니다.
 
@@ -303,7 +303,7 @@
 
 
 <details>
-<summary>9. 전역변수, 지역변수</summary>
+<summary><strong>9. 전역변수, 지역변수</strong></summary>
   
 #### 9-1. 전역변수
 - 전역변수는 프로그램 전체에서 접근 가능한 변수를 의미합니다. 전역변수는 어디서든지 호출이 가능하며, 주의가 필요한 부분이 있습니다.
@@ -330,7 +330,7 @@
 
 
 <details>
-<summary>10. 화살표 함수</summary>
+<summary><strong>10. 화살표 함수</strong></summary>
 
 - JavaScript에서 화살표 함수는 ES6에서 도입된 새로운 함수 표현식입니다. 간결한 문법과 특정 상황에서의 유용한 특성을 제공합니다.
 
@@ -355,7 +355,7 @@
 
 
 <details>
-<summary>11. 조건문 if 문</summary>
+<summary><strong>11. 조건문 if 문</strong></summary>
 
 - JavaScript에서 조건문은 주어진 조건에 따라 코드를 실행하거나 건너뛸 수 있는 구조를 제공합니다.
 
@@ -391,7 +391,7 @@
 
 
 <details>
-<summary>12. 조건문의 중첩</summary>
+<summary><strong>12. 조건문의 중첩</strong></summary>
   
 - 조건문의 중첩은 여러 개의 조건문을 조합하여 복잡한 조건을 다룰 때 사용됩니다.
   ```javascript
@@ -412,7 +412,7 @@
 
 
 <details>
-<summary>13. 조건부 실행</summary>
+<summary><strong>13. 조건부 실행</strong></summary>
 
 #### 13-1. AND 조건(&&)
 - AND 조건(`&&`)은 두 개의 조건이 모두 참일 때에만 실행됩니다. 만약 첫 번째 조건이 거짓이면 두 번째 조건은 확인되지 않습니다.
@@ -435,7 +435,7 @@
 
 
 <details>
-<summary>14. Falsy한 값과 Truthy한 값</summary>
+<summary><strong>14. Falsy한 값과 Truthy한 값</strong></summary>
 
 - Falsy한 값은 조건문에서 거짓으로 간주되는 값이며, Truthy한 값은 조건문에서 참으로 간주되는 값입니다.
 
@@ -455,7 +455,7 @@ Falsy한 값이 아닌 경우는 모두 Truthy한 값으로 간주됩니다.
 
 
 <details>
-<summary>15. 객체</summary>
+<summary><strong>15. 객체</strong></summary>
 
 - 객체는 `key`와 `value`로 이루어진 한 쌍(pair)이다.
 
@@ -516,7 +516,7 @@ Falsy한 값이 아닌 경우는 모두 Truthy한 값으로 간주됩니다.
 
 
 <details>
-<summary>16. 배열</summary>
+<summary><strong>16. 배열</strong></summary>
 
 #### 16-1. 생성
 1. **기본 생성:**
@@ -595,7 +595,7 @@ Falsy한 값이 아닌 경우는 모두 Truthy한 값으로 간주됩니다.
 </details>
 
 <details>
-<summary>17. for</summary>
+<summary><strong>17. for</strong></summary>
 
 #### 17-1. for 문
    - `for` 문은 일정한 횟수만큼 코드 블록을 반복 실행하는 데 사용됩니다.
@@ -621,7 +621,7 @@ Falsy한 값이 아닌 경우는 모두 Truthy한 값으로 간주됩니다.
 
 
 <details>
-<summary>18. while</summary>
+<summary><strong>18. while</strong></summary>
 
 #### 18-1. while 문
    - `while` 문은 주어진 조건이 `true`인 동안 코드 블록을 반복 실행하는 데 사용됩니다.
