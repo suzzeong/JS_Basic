@@ -452,3 +452,199 @@
 Falsy한 값이 아닌 경우는 모두 Truthy한 값으로 간주됩니다.
 
 </details>
+
+
+<details>
+<summary>15. 객체</summary>
+
+- 객체는 `key`와 `value`로 이루어진 한 쌍(pair)이다.
+
+#### 15-1. 객체 생성 방법
+1. **기본적인 객체 생성 방법:**
+    객체는 중괄호 `{}`를 사용하여 생성할 수 있습니다. 예를 들면:
+    ```javascript
+    const myObject = {};
+    ```
+
+2. **생성자 함수를 이용한 객체 생성 방법:**
+    생성자 함수를 사용하여 객체를 생성할 수도 있습니다. 예를 들면:
+    ```javascript
+    function Person(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    const person1 = new Person('John', 25);
+    ```
+
+#### 15-2. 접근하는 방법
+객체의 속성에 접근하기 위해서는 점 표기법(`object.property`)이나 대괄호 표기법(`object['property']`)을 사용할 수 있습니다.
+
+#### 15-3. 객체 메소드 (객체가 가진 여러가지 기능: `Object.~~`)
+1. **`Object.keys()`:**
+   객체의 키를 배열로 반환합니다.
+   ```javascript
+   const myObject = { name: 'Alice', age: 30 };
+   const keys = Object.keys(myObject); // ['name', 'age']
+2. **`Object.values()`:**
+  객체의 값들을 배열로 반환합니다.
+   ```javascript
+    const myObject = { name: 'Bob', age: 28 };
+    const values = Object.values(myObject); // ['Bob', 28]
+3. **`Object.entries()`:**
+  객체의 키와 값 쌍을 배열로 반환합니다. (2차원 배열)
+   ```javascript
+    const myObject = { a: 1, b: 2 };
+    const entries = Object.entries(myObject); // [['a', 1], ['b', 2]]
+4. **`Object.assign()`:**
+  객체를 복사하거나 여러 객체를 병합합니다.
+   ```javascript
+    const obj1 = { a: 1, b: 2 };
+    const obj2 = { b: 3, c: 4 };
+    const mergedObj = Object.assign({}, obj1, obj2); // { a: 1, b: 3, c: 4 }
+5. 객체 비교
+  - 객체를 복사하거나 여러 객체를 병합합니다.
+  - 객체는 참조형이므로 동일한 내용의 객체라도 메모리에 따로 저장되어 다르게 취급됩니다.
+6. 객체 병합 : spread operater (...)
+  - 객체의 속성들을 다른 객체로 병합할 수 있습니다.
+     ```javascript
+      const obj1 = { x: 1, y: 2 };
+      const obj2 = { y: 3, z: 4 };
+      const mergedObj = { ...obj1, ...obj2 }; // { x: 1, y: 3, z: 4 }
+
+</details>
+
+
+<details>
+<summary>16. 배열</summary>
+
+#### 16-1. 생성
+1. **기본 생성:**
+    배열은 대괄호 `[]`를 사용하여 생성할 수 있습니다.
+    ```javascript
+    const myArray = [];
+    ```
+
+2. **크기 지정:**
+    배열의 크기를 지정하여 생성할 수 있습니다.
+    ```javascript
+    const arrayWithSize = new Array(5); // 배열의 길이가 5인 배열 생성
+    ```
+
+#### 16-2. 요소 접근
+배열의 각 요소에는 인덱스를 사용하여 접근할 수 있습니다. 인덱스는 0부터 시작합니다.
+
+#### 16-3. 배열 메소드
+1. **`push`:**
+   배열의 마지막 요소 뒤에 새로운 요소를 추가합니다.
+   ```javascript
+   const myArray = [1, 2, 3];
+   myArray.push(4); // [1, 2, 3, 4]
+2. **`pop`:**
+   배열의 마지막 요소를 삭제합니다.
+   ```javascript
+    const myArray = [1, 2, 3];
+    myArray.pop(); // [1, 2]
+3. **`shift`:**
+   배열의 첫 번째 요소를 삭제합니다.
+   ```javascript
+    const myArray = [1, 2, 3];
+    myArray.shift(); // [2, 3]
+4. **`unshift`:**
+   배열의 첫 번째 요소로 새로운 요소를 추가합니다.
+   ```javascript
+    const myArray = [1, 2, 3];
+    myArray.unshift(0); // [0, 1, 2, 3]
+5. **`splice`:**
+   배열의 특정 위치에서부터 지정된 개수만큼의 요소를 삭제하고 새로운 요소를 추가할 수 있습니다.
+   ```javascript
+    const myArray = [1, 2, 3];
+    myArray.unshift(0); // [0, 1, 2, 3]
+6. **`slice`:**
+   배열의 특정 범위의 요소로 새로운 배열을 반환합니다.
+   ```javascript
+    const myArray = [1, 2, 3, 4, 5];
+    const newArray = myArray.slice(1, 4); // [2, 3, 4]
+
+#### 16-4. forEach, map, filter, find
+1. **`forEach`:**
+   - 배열의 각 요소에 대해 주어진 함수를 실행합니다.
+   - 반환값이 없으며, 기존 배열을 변경할 수 있습니다.
+   ```javascript
+   const numbers = [1, 2, 3];
+   numbers.forEach((num) => console.log(num));
+2. **`map`:**
+    - 배열의 각 요소에 대해 주어진 함수를 실행하고, 그 결과를 새로운 배열로 반환합니다.
+    - 항상 원본 배열의 길이만큼의 새로운 배열을 생성합니다.
+    ```javascript
+    const numbers = [1, 2, 3];
+    const doubled = numbers.map((num) => num * 2);
+3. **`filter`:**
+    - 배열의 각 요소에 대해 주어진 함수의 조건을 만족하는 요소들로 이루어진 새로운 배열을 반환합니다.
+    - 반환 조건이 true일 경우에만 새로운 배열에 포함됩니다.
+   ```javascript
+    const numbers = [1, 2, 3, 4, 5];
+    const evenNumbers = numbers.filter((num) => num % 2 === 0);
+4. **`find`:**
+    - 배열의 각 요소에 대해 주어진 함수의 조건을 만족하는 첫 번째 요소를 반환합니다.
+    - 조건을 만족하는 요소가 없으면 undefined를 반환합니다.
+   ```javascript
+    const numbers = [1, 2, 3, 4, 5];
+    const firstEvenNumber = numbers.find((num) => num % 2 === 0);
+
+</details>
+
+<details>
+<summary>17. for</summary>
+
+#### 17-1. for 문
+   - `for` 문은 일정한 횟수만큼 코드 블록을 반복 실행하는 데 사용됩니다.
+   - 주로 배열과 함께 사용되며, 배열의 각 요소에 접근하는 데 많이 활용됩니다.
+     ```javascript
+     for (let i = 0; i < 5; i++) {
+         console.log(i); // 0, 1, 2, 3, 4
+     }
+     
+#### 17-2. for ~ in 문
+  - for...in 문은 객체의 열거 가능한 속성에 대해 반복하는 데 사용됩니다.
+  - 주로 객체의 속성을 순회하거나 반복적인 작업을 수행할 때 활용됩니다.
+     ```javascript
+    const person = { name: 'Alice', age: 30, job: 'Engineer' };
+    for (const key in person) {
+        console.log(`${key}: ${person[key]}`);
+    }
+
+  주의: for...in은 배열에 대해서도 사용할 수 있지만, 배열의 인덱스를 순회하는 데 사용됩니다. 
+  배열 요소에 직접 접근하기 위해선 for...of를 사용하는 것이 권장됩니다.
+
+</details>
+
+
+<details>
+<summary>18. while</summary>
+
+#### 18-1. while 문
+   - `while` 문은 주어진 조건이 `true`인 동안 코드 블록을 반복 실행하는 데 사용됩니다.
+   - 반복 실행 전에 조건을 먼저 평가하므로, 조건이 거짓인 경우 코드 블록은 한 번도 실행되지 않을 수 있습니다.
+     ```javascript
+     let i = 0;
+     while (i < 5) {
+         console.log(i); // 0, 1, 2, 3, 4
+         i++;
+     }
+
+#### 18-2. do ~ while 문
+  - do...while 문은 코드 블록을 실행한 후 조건을 평가합니다. 따라서 코드 블록은 최소한 한 번은 실행됩니다.
+  - do...while은 조건을 뒤늦게 체크하므로, 코드 블록이 최소한 한 번은 실행되어야 하는 상황에서 유용합니다.
+     ```javascript
+    let i = 0;
+    do {
+        console.log(i); // 0
+        i++;
+    } while (i < 0); // 조건이 거짓이지만 최소한 한 번은 실행됨
+
+
+</details>
+
+
+
